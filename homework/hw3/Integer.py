@@ -74,27 +74,46 @@
 # print(f"Product of digit is: {product}")
 #####################################
 #Integer24 ##If Jan1 was Monday
+#day=["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 # k=int(input("Enter K-th day of a year(range 1-365): "))
 # a1=k%7
 # print(f"The K-th day was the {a1} day of the week")
+#print("")
 # ###################################
 #Integer25 ##If Jan1 was Thursday
 # k=int(input("Enter K-th day of a year(range 1-365): "))
 # a1=k%7
 # print(f"The K-th day was the {a1+3} day of the week")
 ########################################
-#Integer28 ##If Jan1 was Nth day
+# Integer28 ##If Jan1 was Nth day
 # k=int(input("Enter K-th day of a year(range 1-365): "))
 # n=int(input("Enter Jan 1 as n-th day of a wek (range 1-7): "))
-# a1=k%7
-# print(f"The K-th day was the {a1+n-1} day of the week")
+# a1=(k+n-1)%7
+# print(f"The K-th day was the {a1} day of the week")
 #########################################
-#Integer29
+# #Integer29 #edip bilmedim
+# a=int(input("a: "))
+# b=int(input("b: "))
+# c=int(input("c: "))
+# req=a*b
+# placed_sqr=req//(c*c)
+# area_left=req%(c*c)
+# print(f"{placed_sqr} can be placed in a A*B reqtangle")
+# print(f"{area_left} are is left empty")
+
+#######################
+
+# #Integer29 #edip bilmedim
 a=int(input("a: "))
 b=int(input("b: "))
 c=int(input("c: "))
-req=a*b
-placed_sqr=req//(c*c)
-area_left=req%(c*c)
-print(f"{placed_sqr} can be placed in a A*B reqtangle")
-print(f"{area_left} are is left empty")
+numb_sqr=int(int(a/c)*int((b/c)))
+unused_prt= int(int(a*b)-int(numb_sqr*pow(c,2)))
+print("Sqrs in a reqtangle", numb_sqr)
+print("Unused part", unused_prt)
+
+#####################
+# Integer30
+# year=int(input("Enter year AD: "))
+# cent=year//100+1
+# print(f"Its {cent} century")
